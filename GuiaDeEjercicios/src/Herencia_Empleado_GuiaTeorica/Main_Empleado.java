@@ -26,7 +26,7 @@ public class Main_Empleado {
                 System.out.println("Ingrese dias trabajados del empleado: ");
                 int diasTrabajados = lector.nextInt();
                 Obrero o = new Obrero(diasTrabajados, legajo, nombre, sueldoBasico);
-                System.out.println(o.toString());
+                e[i] = o;
 
             } else if (tipoEmpleado == 2) {
 
@@ -34,11 +34,11 @@ public class Main_Empleado {
                 int cumplioPresentismo = lector.nextInt();
                 if (cumplioPresentismo == 1) {
                     Administrador a = new Administrador(true, legajo, nombre, sueldoBasico);
-                    System.out.println(a.toString());
+                    e[i] = a;
 
                 } else {
                     Administrador a = new Administrador(false, legajo, nombre, sueldoBasico);
-                    System.out.println(a.toString());
+                    e[i] = a;
                 }
 
             } else if (tipoEmpleado == 3) {
@@ -46,15 +46,15 @@ public class Main_Empleado {
                 System.out.println("Ingrese total de ventas: ");
                 float totalVentas = lector.nextFloat();
                 Vendedor v = new Vendedor(totalVentas, legajo, nombre, sueldoBasico);
-                System.out.println(v.toString());
+                e[i] = v;
 
             }
-          
+
         }
-          /*for (Empleado empleado : e) {
-                System.out.println(e.toString());
-                
-            }*/
+        for (Empleado empleado : e) {
+            System.out.println(empleado.toString());
+
+        }
 
     }
 
