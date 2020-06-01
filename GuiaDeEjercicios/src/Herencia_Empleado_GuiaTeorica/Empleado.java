@@ -41,12 +41,17 @@ public abstract class Empleado {
         return "\n*****Empleados*****"
                 + "\nLegajo: " + legajo
                 + "\nNombre: " + nombre;
-               
+
     }
 
     public float calcularSueldo() {
         return 0;
 
-}
+    }
+     public float SumarSueldo() {
+        return 0;
 
+    }
+
+  
 }

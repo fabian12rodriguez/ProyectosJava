@@ -11,10 +11,11 @@ public class Obrero extends Empleado {
 
     @Override
     public float calcularSueldo() {
+        
         float sueldoNeto = diasTrabajados * (sueldoBasico / 22);
-
         return sueldoNeto;
     }
+
 
     @Override
     public String toString() {
