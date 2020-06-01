@@ -72,6 +72,6 @@ public class Main_Empleado {
         System.out.println("\n-----------------------------");
         System.out.println("Empleado que menos sueldo cobra: " + nombreMenor);
         System.out.println("\n-----------------------------");
-        System.out.println("Promedio genral de sueldos: " + promedioSueldoObrero);
+        System.out.println("Promedio general de sueldos: " + promedioSueldoObrero);
     }
 }
